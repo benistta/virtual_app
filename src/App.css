@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -34,5 +34,158 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+
+/* App.css */
+
+/* .App {
+  text-align: center;
+  padding: 20px;
+} */
+
+.App {
+  text-align: center;
+  background-color: rgb(231, 42, 89);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  /* animation: animate 6s linear infinite; */
+  border: #0d2938 solid 5px;
+}
+
+/* h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+} */
+
+h1 {
+  /* font-size: 24px;
+  color: #333; */
+  color:rgb(0, 235, 252); 
+    
+  animation-name: bounceIn;
+  
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-direction: 0s;
+  animation-iteration-count: 20;
+  font-size: 47px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.response {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: left;
+}
+
+/* h1 {
+  /* font-size: 24px;
+  color: #333; */
+  color:rgb(252, 181, 0); 
+    
+  animation-name: bounceIn;
+  
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-direction: 0s;
+  animation-iteration-count: 20;
+  font-size: 47px;
+/* } */ */
+/* textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 20px;
+  border: rgb(229, 163, 149) 2px solid;
+} */
+
+button[type="submit"] {
+  /* padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px; */
+  background-color: rgb(212, 233, 240);
+    color: rgb(132, 4, 151);
+    border: rgb(229, 163, 149) 2px solid;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+/* img {
+  width: 330px;
+  height: auto;
+  animation: slideInleft
+  /* animation: animate 6s linear infinite; */
+  /* animation-name: bounceIn; */
+/* } */ 
+/* 
+@keyframes slideInleft {
+  from {
+    transform: translateX(-500px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+} */
+
+/* @keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(300deg);
+  }
+} */
+
+img {
+  width: 330px;
+  height: auto;
+  animation: slideInLeft 1s ease-in-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-1000px);
+  }
+
+  to {
+    transform: translateX(0);
   }
 }

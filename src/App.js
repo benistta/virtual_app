@@ -110,6 +110,7 @@
 
 import React, { useState } from 'react';
 import './App.css';
+import chatbot from './images/guitar-sing (1).gif'
 
 function App() {
   const [message, setMessage] = useState('');
@@ -132,6 +133,7 @@ function App() {
   return (
     <div className="App">
       <h1>Song App</h1>
+      <img src={chatbot} alt="chatbot image" />
       <form onSubmit={handleSubmit}>
         <textarea
           value={message}

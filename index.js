@@ -1,93 +1,3 @@
-// A express server, which will handle api request which will handle api requests coming in and responde back with a json object, it will use body parser as well as cors.
-
-// copy openai Node.js package:
-
-// // import { Configuration, OpenAIApi } from "openai";
-// const  OpenAI = require('openai');
-// const { Configuration, OpenAIApi } = OpenAI;
-// // const { Configuration, OpenAIApi } = require('openai');
-
-// const express = require('express');
-// const bodyParser = require('body-parser');
-// const cors = require('cors');
-// const app = express();
-// const port = 3001;
-
-// const configuration = new Configuration({
-//     organization: "org-kx8e4puhUptTJ4M8NfLNcf9s",
-//     // apiKey: process.env.OPENAI_API_KEY,
-//     apikey: "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" 
-// });
-// const openai = new OpenAIApi(configuration);
-// // const response = await openai.listEngines();
-
-// app.use(bodyParser.json());
-// app.use(cors());
-
-// // set up the routes
-
-// app.post('/', async (req, res) => {
-//     const response = await openai.createCompletion({
-//         model: "text-davinci-003",
-//         prompt: "Say this is a test",
-//         max_tokens: 7,
-//         temperature: 0,
-//       });
-
-//     console.log(response)
-//     res.json({
-//         // message: "Hello World!"
-//         message: response.choices[0].text,
-//     });
-// });
-
-// app.listen(port, () => {
-//     console.log('example app listening');
-// });
-
-
-// const OpenAI = require('openai');
-// const { Configuration, OpenAIApi } = OpenAI;
-
-// const express = require('express');
-// const bodyParser = require('body-parser');
-// const cors = require('cors');
-// const app = express();
-// const port = 3001;
-
-// const configuration = new Configuration({
-//     organization: "org-kx8e4puhUptTJ4M8NfLNcf9s",
-//     // apiKey: process.env.OPENAI_API_KEY,
-//     apiKey: "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"
-// });
-// const openai = new OpenAIApi(configuration);
-// // const response = await openai.listEngines();
-
-// app.use(bodyParser.json());
-// app.use(cors());
-
-// // set up the routes
-
-// app.post('/', async (req, res) => {
-//     const response = await openai.createCompletion({
-//         model: "text-davinci-003",
-//         prompt: "Say this is a test",
-//         max_tokens: 7,
-//         temperature: 0,
-//     });
-//     console.log(response.data)
-//     res.json({
-//         message: "Hello World!"
-//     });
-// });
-
-// app.listen(port, () => {
-//     console.log('example app listening') 
-// });
-
-
-
-
 
 const OpenAI = require("openai");
 const { Configuration, OpenAIApi } = OpenAI;
@@ -98,7 +8,7 @@ const cors = require('cors');
 const app = express();
 const port = 3001;
 require('dotenv').config()
-console.log(process.env)
+// console.log(process.env)
 
 const configuration = new Configuration({
     organization: "org-kx8e4puhUptTJ4M8NfLNcf9s",
